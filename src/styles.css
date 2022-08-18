@@ -64,7 +64,7 @@ a {
   top: 100px;
   left: 0;
   border-radius: 0 10px 10px 0;
-  z-index: 9999;
+  z-index: 10000;
 }
 .social-panel ul {
   display: flex;
@@ -106,6 +106,7 @@ a {
 .header-text h1 {
   font-size: 60px;
   font-weight: bold;
+  text-align: center;
 }
 .header-text p {
   font-size: 18px;
@@ -273,6 +274,13 @@ a {
   color: #f70037;
 }
 /* Footer */
+.footer-section .social-panel {
+  position: relative;
+  top: 0;
+}
+.footer-section .social-panel ul {
+  flex-direction: row;
+}
 .footer-section ul {
   margin: 0px;
   padding: 0px;
@@ -388,4 +396,13 @@ a {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border: 1px solid rgba(255, 255, 255, 0.18);
+}
+@media only screen and (max-width: 700px) {
+  .social-panel-main {
+    display: none !important;
+  }
+  .yt-video {
+    width: 90vw;
+    height: 300px;
+  }
 }
