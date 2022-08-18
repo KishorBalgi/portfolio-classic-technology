@@ -1,0 +1,319 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --clr-primary: #f15412;
+  --clr-secondary: #34b3f1;
+  --clr-tertiary: #eeeeee;
+}
+body {
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+.text-logo {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: var(--clr-primary);
+  font-family: "Roboto", sans-serif;
+}
+.text-primary {
+  color: var(--clr-primary) !important;
+}
+.btn-primary {
+  background-color: var(--clr-primary) !important;
+  border: none;
+}
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #000;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--clr-primary);
+  border-radius: 10px;
+}
+/* Navbar */
+.main-navbar {
+  position: fixed;
+  width: 100vw;
+  background-color: none;
+  padding: 10px 100px;
+  z-index: 9999;
+}
+.main-navbar .navbar-collapse ul {
+  margin-left: auto;
+}
+.main-navbar .nav-link {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+}
+.main-navbar .nav-link.active {
+  color: var(--clr-primary);
+}
+/* Social Panel */
+.social-panel {
+  position: fixed;
+  top: 100px;
+  left: 0;
+  border-radius: 0 10px 10px 0;
+  z-index: 9999;
+}
+.social-panel ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 0;
+}
+.social-panel ul li {
+  display: inline;
+}
+.social-icon ul li a {
+  text-decoration: none;
+}
+.social-icon {
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+  transition: all 0.3s ease-in-out;
+}
+.social-icon:hover {
+  transform: scale(1.1);
+}
+/* Header */
+#header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5)),
+    url("http://www.classictechnology.in/wp-content/uploads/2021/05/light-bulbs-lamp-light-5488573.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  color: #fff;
+  display: grid;
+  place-items: center;
+}
+.header-text h1 {
+  font-size: 60px;
+  font-weight: bold;
+}
+.header-text p {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  width: 50%;
+}
+.header-text .btn {
+  border-radius: 50px;
+}
+/* Services */
+.section-services {
+  padding-top: 110px;
+  padding-bottom: 120px;
+  font-family: "Poppins", sans-serif;
+  background-color: #211f24;
+  color: #fff;
+}
+
+.section-services .header-section {
+  margin-bottom: 35px;
+}
+
+.section-services .header-section .title {
+  position: relative;
+  margin-bottom: 40px;
+  padding-bottom: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.section-services .header-section .title:before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 140px;
+  height: 1px;
+  background-color: #f70037;
+}
+
+.section-services .header-section .title span {
+  color: #f70037;
+}
+
+.section-services .header-section .description {
+  color: #dadada;
+}
+
+.section-services .single-service {
+  margin-top: 40px;
+  background-color: #24252a;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.section-services .single-service .part-1 {
+  padding: 40px 40px 25px;
+  border-bottom: 2px solid #1d1e23;
+}
+
+.section-services .single-service .part-1 img {
+  width: 60px;
+  margin: 0 0 20px 20px;
+}
+
+.section-services .single-service .part-1 .title {
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.8em;
+}
+
+.section-services .single-service .part-2 {
+  padding: 30px 40px 40px;
+}
+
+.section-services .single-service .part-2 .description {
+  margin-bottom: 22px;
+  color: #dadada;
+  font-size: 14px;
+  line-height: 1.8em;
+}
+
+.section-services .single-service .part-2 a {
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.section-services .single-service .part-2 a i {
+  margin-right: 10px;
+  color: #f70037;
+}
+/* Footer */
+.footer-section ul {
+  margin: 0px;
+  padding: 0px;
+}
+.footer-section {
+  width: 100vw;
+  background: #151414;
+  position: relative;
+}
+.footer-cta {
+  border-bottom: 1px solid #373636;
+}
+.single-cta i {
+  color: var(--clr-primary);
+  font-size: 30px;
+  float: left;
+  margin-top: 8px;
+}
+.cta-text {
+  padding-left: 15px;
+  display: inline-block;
+}
+.cta-text h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+.cta-text span {
+  color: #dadada;
+  font-size: 15px;
+}
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+.footer-pattern img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 330px;
+  background-size: cover;
+  background-position: 100% 100%;
+}
+.footer-logo {
+  margin-bottom: 30px;
+}
+.footer-logo img {
+  max-width: 200px;
+}
+.footer-text p {
+  margin-bottom: 14px;
+  font-size: 14px;
+  color: #dadada;
+  line-height: 28px;
+}
+.footer-widget-heading h3 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 40px;
+  position: relative;
+}
+.footer-widget-heading h3::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -15px;
+  height: 2px;
+  width: 50px;
+  background: var(--clr-primary);
+}
+.footer-widget ul li {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  margin-bottom: 12px;
+}
+.footer-widget ul li a:hover {
+  color: var(--clr-primary);
+}
+.footer-widget ul li a {
+  color: #878787;
+  text-transform: capitalize;
+}
+.copyright-area {
+  background: #202020;
+  padding: 25px 0;
+}
+.copyright-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #878787;
+}
+.copyright-text p a {
+  color: #ff5e14;
+}
+.footer-menu li {
+  display: inline-block;
+  margin-left: 20px;
+}
+.footer-menu li:hover a {
+  color: #ff5e14;
+}
+.footer-menu li a {
+  font-size: 14px;
+  color: #878787;
+}
+/* Glass Morphism */
+.glass {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
