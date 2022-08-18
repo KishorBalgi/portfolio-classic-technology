@@ -16,7 +16,7 @@ a {
 }
 .text-logo {
   font-size: 1.6rem;
-  font-weight: 500;
+  font-weight: 800;
   color: var(--clr-primary);
   font-family: "Roboto", sans-serif;
 }
@@ -25,6 +25,7 @@ a {
 }
 .btn-primary {
   background-color: var(--clr-primary) !important;
+  border-radius: 50px;
   border: none;
 }
 /* Custom Scrollbar */
@@ -44,7 +45,7 @@ a {
   width: 100vw;
   background-color: none;
   padding: 10px 100px;
-  z-index: 9999;
+  z-index: 99999;
 }
 .main-navbar .navbar-collapse ul {
   margin-left: auto;
@@ -115,20 +116,12 @@ a {
 .header-text .btn {
   border-radius: 50px;
 }
-/* Services */
-.section-services {
-  padding-top: 110px;
-  padding-bottom: 120px;
-  font-family: "Poppins", sans-serif;
-  background-color: #211f24;
-  color: #fff;
-}
-
-.section-services .header-section {
+/* Section Header */
+.header-section {
   margin-bottom: 35px;
 }
 
-.section-services .header-section .title {
+.header-section .title {
   position: relative;
   margin-bottom: 40px;
   padding-bottom: 25px;
@@ -136,7 +129,7 @@ a {
   font-weight: 700;
 }
 
-.section-services .header-section .title:before {
+.header-section .title:before {
   content: "";
   position: absolute;
   bottom: 0;
@@ -147,24 +140,92 @@ a {
   background-color: #f70037;
 }
 
-.section-services .header-section .title span {
+.header-section .title span {
   color: #f70037;
 }
 
-.section-services .header-section .description {
+.header-section .description {
   color: #dadada;
+}
+/* Recent Posts */
+#posts {
+  position: relative;
+}
+#posts .single-service {
+  height: 780px;
+}
+.blog-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+.blog-card {
+  position: relative;
+  z-index: 9999;
+}
+/* Services */
+#services {
+  position: relative;
+}
+/* Circles */
+.circle-1 {
+  position: absolute;
+  right: -200px;
+  width: 500px;
+  height: 500px;
+  background: linear-gradient(to bottom, #f15412, #ff814b);
+  clip-path: circle(50% at 50% 50%);
+  margin: 0 auto;
+}
+.circle-2 {
+  position: absolute;
+  bottom: -120px;
+  left: -50px;
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(to bottom, #f15412, #ff814b);
+  clip-path: circle(50% at 50% 50%);
+  margin: 0 auto;
+  z-index: 999;
+}
+.circle-3 {
+  position: absolute;
+  top: 500px;
+  right: -80px;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(to bottom, #f15412, #ff814b);
+  clip-path: circle(50% at 50% 50%);
+  margin: 0 auto;
+}
+.circle-4 {
+  position: absolute;
+  bottom: -100px;
+  left: -50px;
+  width: 400px;
+  height: 400px;
+  background: linear-gradient(to bottom, #f15412, #ff814b);
+  clip-path: circle(50% at 50% 50%);
+  margin: 0 auto;
+}
+
+.section-services {
+  padding-top: 110px;
+  padding-bottom: 120px;
+  font-family: "Poppins", sans-serif;
+  background-color: #211f24;
+  color: #fff;
 }
 
 .section-services .single-service {
   margin-top: 40px;
-  background-color: #24252a;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
 
 .section-services .single-service .part-1 {
   padding: 40px 40px 25px;
-  border-bottom: 2px solid #1d1e23;
 }
 
 .section-services .single-service .part-1 img {
@@ -186,11 +247,13 @@ a {
 .section-services .single-service .part-2 .description {
   margin-bottom: 22px;
   color: #dadada;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.8em;
 }
 
 .section-services .single-service .part-2 a {
+  position: absolute;
+  bottom: 20px;
   color: #fff;
   font-size: 14px;
   text-decoration: none;
