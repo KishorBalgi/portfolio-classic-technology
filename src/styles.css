@@ -147,6 +147,15 @@ a {
 .header-section .description {
   color: #dadada;
 }
+/* Recent Job Openings */
+.jobs-list li {
+  display: block;
+  font-size: 18px;
+  margin: 8px 0;
+}
+.job-list li a {
+  text-decoration: none;
+}
 /* Recent Posts */
 #posts {
   position: relative;
